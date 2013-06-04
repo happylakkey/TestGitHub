@@ -25,6 +25,9 @@
     // Override point for customization after application launch.
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
+    
+    [self.viewController.view setBackgroundColor:[UIColor greenColor]];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
